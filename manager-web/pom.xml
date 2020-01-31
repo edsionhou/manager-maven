@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>maven-manager</artifactId>
+        <groupId>org.hou</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>manager-web</artifactId>
+    <packaging>war</packaging>
+
+    <name>manager-web </name>
+    <!-- FIXME change it to the project's website -->
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.hou</groupId>
+            <artifactId>manager-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <!--spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <!--jsp/jstl-->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
+<!--    &lt;!&ndash;tomcat插件&ndash;&gt;-->
+<!--    <build>-->
+<!--    &lt;!&ndash;这里path配置/后， localhost:9090-->
+<!--        会直接访问index.jsp 具体为什么我不知道&ndash;&gt;-->
+<!--            <plugins>-->
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.tomcat.maven</groupId>-->
+<!--                    <artifactId>tomcat7-maven-plugin</artifactId>-->
+<!--                    <configuration>-->
+<!--                        <path>/</path>-->
+<!--                        <port>9090</port>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
+
+<!--            </plugins>-->
+
+
+
+<!--    </build>-->
+</project>
